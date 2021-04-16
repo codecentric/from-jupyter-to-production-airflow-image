@@ -48,7 +48,7 @@ jobs:
         uses: docker/build-push-action@v2.4.0
         with:
           context: .
-          tags: codecentric/from-jupyter-to-production-baseimage:latest
+          tags: codecentric/from-jupyter-to-production-airflow-image:latest
           push: true
           builder: ${{ steps.buildx.outputs.name }}
           cache-from: type=local,src=/tmp/.buildx-cache
